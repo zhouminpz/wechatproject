@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="TAPWebService" version="2.5">
+
+	<servlet>
+		<servlet-name>weixin</servlet-name>
+		<servlet-class>com.github.binarywang.demo.wx.mp.utils.WeiXinUtils</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>weixin</servlet-name>
+		<url-pattern>/wx</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<session-timeout>20</session-timeout>
+	</session-config>
+</web-app>
